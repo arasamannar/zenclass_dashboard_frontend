@@ -53,6 +53,11 @@ function App() {
             <Route path='/reset/:id' element={<Reset />} />
             <Route path='/confirm/:id' element={<ConfirmUser />} />
             <Route path='/*' element={<LoggedOut />} />
+          </>
+        }
+        {
+          loggedUser && !loggedUser.isMentor &&
+          <>
             <Route path='/' element={<Roadmap />} />
             <Route path='/class' element={<Roadmap />} />
             <Route path='/dashboard' element={<Dashboard />} />
@@ -70,12 +75,6 @@ function App() {
             <Route path='/learderboard' element={<Leaderboard />} />
             <Route path='/syllabus' element={<Syllabus />} />
             <Route path='/profile' element={<Profile />} />
-          </>
-        }
-        {
-          loggedUser && !loggedUser.isMentor &&
-          <>
-           
           </>
         }
         {
