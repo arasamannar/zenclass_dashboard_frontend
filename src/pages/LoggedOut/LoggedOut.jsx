@@ -10,7 +10,7 @@ const LoggedOut = () => {
     return (
         <div className='loggedOut'>
             <div className="row img__container">
-                <img src={LOGO} alt=".." className='logo' style={{maxWidth:"100px"}}/>
+                <img src={LOGO} alt=".." className='logo' style={{maxWidth:"150px"}}/>
             </div>
             <div className="body__container p-5 rounded">
                 <h3 className='text-center mb-5'>
