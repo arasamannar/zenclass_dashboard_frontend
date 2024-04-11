@@ -22,7 +22,7 @@ const Profile = () => {
             .required("Required"),
         lName: Yup.string()
             .max(15, "Must be less than 15 Characters")
-            .min(6, "Must be at least 6 Characters")
+            .min(1, "Atleast one character is required")
             .required("Required"),
         email: Yup.string()
             .email("Email is Invalid")
