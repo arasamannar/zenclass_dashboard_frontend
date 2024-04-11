@@ -14,7 +14,7 @@ const Signup = () => {
     const validate = Yup.object({
         name: Yup.string()
             .max(15, "Must be less than 15 Characters")
-            .min(6, "Must be at least 6 Characters")
+            .min(3, "Must be at least 3 Characters")
             .required("Required"),
         lName: Yup.string()
             .max(15, "Must be less than 15 Characters")
