@@ -30,12 +30,12 @@ const Profile = () => {
         batch: Yup.string()
             .required("Required"),
         contactNo: Yup.string()
-            .max(15, "Must be less than 15 Characters")
-            .min(10, "Must be at least 10 Characters")
+            .max(10, "Please enter a valid contact number")
+            .min(10, "Please enter a valid contact number")
             .required("Required"),
         experience: Yup.string()
-            .max(10, "Must be less than 10 Characters")
-            .min(1, "Must be at least 1 Characters")
+            .max(2, "value less than 99")
+            .min(1, "Enter a value between 0-99")
             .required("Required"),
         qualification: Yup.string()
             .max(35, "Must be less than 35 Characters")
