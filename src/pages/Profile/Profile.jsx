@@ -34,7 +34,7 @@ const Profile = () => {
             .min(10, "Please enter a valid contact number")
             .required("Required"),
         experience: Yup.string()
-            .max(2, "value less than 99")
+            .max(2, "value less than 100")
             .min(1, "Enter a value between 0-99")
             .required("Required"),
         qualification: Yup.string()
