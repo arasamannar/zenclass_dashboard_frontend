@@ -131,20 +131,6 @@ const Profile = () => {
                                         type="text"
                                         placeholder="Enter Qualification"
                                     />
-                                    <TextField
-                                        label="Password"
-                                        name="password"
-                                        id="password"
-                                        type="password"
-                                        placeholder="Enter Password"
-                                    />
-                                    <TextField
-                                        label="Confirm Password"
-                                        name="cPassword"
-                                        id="cPassword"
-                                        type="password"
-                                        placeholder="Confirm Password"
-                                    />
                                     <div className="text-center mt-3">
                                         <button className="submit__capstone" type="submit">
                                             {
