@@ -22,7 +22,7 @@ const Profile = () => {
             .required("Required"),
         lName: Yup.string()
             .max(15, "Must be less than 15 Characters")
-            .min(1, "Must be at least 1 Characters")
+            .min(6, "Must be at least 6 Characters")
             .required("Required"),
         email: Yup.string()
             .email("Email is Invalid")
@@ -30,12 +30,12 @@ const Profile = () => {
         batch: Yup.string()
             .required("Required"),
         contactNo: Yup.string()
-            .max(10, "Please enter a valid contact number")
-            .min(10, "Please enter a valid contact number")
+            .max(15, "Must be less than 15 Characters")
+            .min(10, "Must be at least 10 Characters")
             .required("Required"),
         experience: Yup.string()
-            .max(2, "value less than 100")
-            .min(1, "Enter a value between 0-99")
+            .max(10, "Must be less than 10 Characters")
+            .min(1, "Must be at least 1 Characters")
             .required("Required"),
         qualification: Yup.string()
             .max(35, "Must be less than 35 Characters")
@@ -130,6 +130,20 @@ const Profile = () => {
                                         id="qualification"
                                         type="text"
                                         placeholder="Enter Qualification"
+                                    />
+                                    <TextField
+                                        label="Password"
+                                        name="password"
+                                        id="password"
+                                        type="password"
+                                        placeholder="Enter Password"
+                                    />
+                                    <TextField
+                                        label="Confirm Password"
+                                        name="cPassword"
+                                        id="cPassword"
+                                        type="password"
+                                        placeholder="Confirm Password"
                                     />
                                     <div className="text-center mt-3">
                                         <button className="submit__capstone" type="submit">
