@@ -12,7 +12,7 @@ const ConfirmUser = () => {
     return (
         <div className='loggedOut'>
             <div className="row img__container">
-                <img src={LOGO} alt=".." className='logo' />
+                <img src={LOGO} alt=".." className='logo' style={{maxWidth:"150px"}}/>
             </div>
             <div className="body__container p-5 rounded text-center">
                 <h3 className='text-center mb-4'>
