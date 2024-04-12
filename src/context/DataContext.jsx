@@ -113,7 +113,7 @@ export const DataProvider = ({ children }) => {
             setIsLoading(false);
             setTimeout(() => {
                 navigate("/");
-            }, 2000);
+            }, 6000);
         } catch (error) {
             if (error.response.data.message) {
                 toast.error(error.response.data.message)
@@ -139,7 +139,7 @@ export const DataProvider = ({ children }) => {
             setIsLoading(false);
             setTimeout(() => {
                 navigate("/class");
-            }, 2000);
+            }, 6000);
         } catch (error) {
             if (error.response.data.message) {
                 toast.error(error.response.data.message)
@@ -163,7 +163,7 @@ export const DataProvider = ({ children }) => {
             setIsLoading(false);
             setTimeout(() => {
                 navigate("/");
-            }, 2000);
+            }, 6000);
         } catch (error) {
             if (error.response.data.message) {
                 toast.error(error.response.data.message)
@@ -185,7 +185,7 @@ export const DataProvider = ({ children }) => {
             setIsLoading(false);
             setTimeout(() => {
                 navigate("/");
-            }, 2000);
+            }, 6000);
         } catch (error) {
             if (error.response.data.message) {
                 toast.error(error.response.data.message)
@@ -208,7 +208,7 @@ export const DataProvider = ({ children }) => {
             setIsLoading(false);
             setTimeout(() => {
                 navigate("/");
-            }, 2000);
+            }, 6000);
         } catch (error) {
             if (error.response.data.message) {
                 toast.error(error.response.data.message)
